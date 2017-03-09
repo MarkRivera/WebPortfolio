@@ -17,39 +17,47 @@
     <script src="port.js"></script>
 </head>
 <body>
-    <section id="about">
-    <div class="content">
-        <div class="title">About us</div>
-        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in ligula.</div>
-    </div>
-</section>
- 
-<section id="portfolio">
-    <div class="content">
-        <div class="title">Portfolio</div>
-        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in ligula.</div>
-    </div>
-</section>
- 
-<section id="skills">
-    <div class="content">
-        <div class="title">Services</div>
-        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in ligula.</div>
-    </div>
-</section>
-<section id="contact">
-    <div class="content">
-        <div class="title">Contact</div>
-        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in ligula.</div>
-    </div>
-</section>
-    <nav class="vertical-fixed-nav">
-    <ul>
-        <li class="about"><a href="#about"><span>About</span></a></li>
-        <li class="portfolio"><a href="#portfolio"><span>Portfolio</span></a></li>
-        <li class="skills"><a href="#skills"><span>Services</span></a></li>
-        <li class="contact"><a href="#contact"><span>Contact</span></a></li>
-    </ul>
-</nav>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 id="logo"><i class="fa fa-code fa-5x" aria-hidden="true" id="codeSymbol"></i></h2>
+                </div>
+                <div class="col-sm-12">
+                    <nav class="nav flex-column flex-sm-row justify-content-center">
+                        <a class="flex-sm-fill text-sm-center nav-link active" href="#Portfolio">Portfolio</a>
+                        <a class="flex-sm-fill text-sm-center nav-link" href="#">Services</a>
+                        <a class="flex-sm-fill text-sm-center nav-link" href="#">Contact</a>
+                        <a class="flex-sm-fill text-sm-center nav-link disabled" href="#">Disabled</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id = "shortSnip">
+        <p>My name is Mark Rivera and I love to create websites that express impactful and memorable stories. </p>
+    </section>
+    <section class="fullSec" id="Portfolio">
+        <div class="container">
+            <div class="row">
+                <div class ="col-lg-6">
+                <figure class="figure">
+                    <img src="Screenshots/inspiration%20screenshot.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                    <figcaption class="figure-caption text-center">If you're looking for a inspiring quote, you can find it <a href="http://codepen.io/MarkRivera/full/WRmQgV/" target="_blank">here</a>.</figcaption>
+                </figure>
+                    </div>
+                <div class ="col-lg-6">
+                <figure class="figure">
+                    <img src="Screenshots/twitch%20app%20screenshot.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                    <figcaption class="figure-caption">An app to see which of my favorite streamers are online. See it <a href="http://codepen.io/MarkRivera/full/EWaggO/" target="_blank">Here</a>.</figcaption>
+                </figure>
+                    </div>
+            </div>
+        </div>
+        
+        
+        
+    </section>
+    
 </body>
 </html>
