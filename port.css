@@ -66,7 +66,7 @@
         margin: 5px 0px;
     }
     
-    .fullSec .backG {
+    .fullSec .backgroundImg img#backG {
         animation-name: grayOut;
         animation-duration: 2s;
         animation-timing-function: ease-in-out;
@@ -86,21 +86,13 @@
         }
     }
     
-    .fullSec .backG{
+    #Portfolio #backG{
         width: 100%;
         height: 100%;
         position: absolute;
         z-index: 0;
     }
     
-    .siteImg{
-        width: 384px;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-        position: relative;
-        top: 100px;
-    }
     
     #Portfolio{
         width: 75%;
