@@ -7,57 +7,64 @@
     <meta name="keywords" content="Portfolio, Work, HTML, Coding, Resume, Skill"/>
     <meta name="author" content="Mark Rivera"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/80dec7cd28.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="port.css">
     <script src="port.js"></script>
 </head>
 <body>
+    <section id="wrapper">
     <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2 id="logo"><i class="fa fa-code fa-5x" aria-hidden="true" id="codeSymbol"></i></h2>
-                </div>
-                <div class="col-sm-12">
-                    <nav class="nav flex-column flex-sm-row justify-content-center">
-                        <a class="flex-sm-fill text-sm-center nav-link active" href="#Portfolio">Portfolio</a>
-                        <a class="flex-sm-fill text-sm-center nav-link" href="#">Services</a>
-                        <a class="flex-sm-fill text-sm-center nav-link" href="#">Contact</a>
-                        <a class="flex-sm-fill text-sm-center nav-link disabled" href="#">Disabled</a>
-                    </nav>
-                </div>
+        <div class="item" id="logo">
+            <h1><i class="fa fa-4x fa-code" aria-hidden="true"></i></h1>
+        </div>
+        <div class="navi">
+           
+            <nav>
+                <ul>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#contactMe">Contact Me</a></li>
+                </ul>
+            </nav>
+            <div class="aboutMe">
+                <img src="Screenshots/Mark%20Photo.jpg" id="picMe">
+                <p>My name is Mark Rivera.</p> 
+                <p>I love to create sites that express the stories you want to tell.</p> 
+                <p>I currently live in New York City. </p>
             </div>
+            
+        
+            
         </div>
     </header>
-    <section id = "shortSnip">
-        <p>My name is Mark Rivera and I love to create websites that express impactful and memorable stories. </p>
-    </section>
+
     <section class="fullSec" id="Portfolio">
-        <div class="container">
-            <div class="row">
-                <div class ="col-lg-6">
-                <figure class="figure">
-                    <img src="Screenshots/inspiration%20screenshot.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-                    <figcaption class="figure-caption text-center">If you're looking for a inspiring quote, you can find it <a href="http://codepen.io/MarkRivera/full/WRmQgV/" target="_blank">here</a>.</figcaption>
-                </figure>
-                    </div>
-                <div class ="col-lg-6">
-                <figure class="figure">
-                    <img src="Screenshots/twitch%20app%20screenshot.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-                    <figcaption class="figure-caption">An app to see which of my favorite streamers are online. See it <a href="http://codepen.io/MarkRivera/full/EWaggO/" target="_blank">Here</a>.</figcaption>
-                </figure>
-                    </div>
-            </div>
-        </div>
-        
-        
-        
-    </section>
+                
     
+    </section>
+    <section class="fullSec" id="Services">
+                
+    
+    </section>
+        
+    <section class="fullSec" id="contactMe">
+                
+    
+    </section>
+        
+    
+    <footer>
+        <div id="socialFooters">
+        <a href="https://github.com/MarkRivera" target="_blank"><img src="Screenshots/nucleo-social-icons/svg/social-1_logo-github.svg" alt="gitIconLink"></a>
+        <a href="http://codepen.io/MarkRivera/" target="_blank"><img src="Screenshots/nucleo-social-icons/svg/social-1_logo-codepen.svg" alt="codepenIcon"></a>
+        <a href="https://www.facebook.com/M.A.Rivera1991" target="_blank"><img src="Screenshots/nucleo-social-icons/svg/social-1_logo-facebook.svg" alt="facebookIcon"></a>
+        <a href="https://www.linkedin.com/in/mark-rivera-3a947197/" target="_blank"><img src="Screenshots/nucleo-social-icons/svg/social-1_logo-linkedin.svg" alt="linkedInIcon"></a>
+        </div>
+        <cite><p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> Mark Rivera</p></cite>
+    </footer>
+        </section>
 </body>
 </html>
