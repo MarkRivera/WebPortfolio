@@ -7,6 +7,10 @@
         background-color: #151515;
     }
     
+    .fullSec{
+        min-height: 794px;
+    }
+    
     #wrapper{
         max-width: 1024px;
         background-color: #fff;
@@ -141,9 +145,7 @@
         left: 256px;
     }
     
-    #Portfolio #backG{
-        
-    }
+    
     
     .siteContainer{
         width:50%;
@@ -215,6 +217,33 @@
         width: 75%;
         position: relative;
         left: 256px;
+    }
+    
+    #offers{
+        width: 100%;
+        position: relative;
+        top: 25%;
+        height: 50%;
+        border-radius:10px;
+        background-color: #fff;
+        box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.1) inset;
+        border-bottom: #dddddd solid 1px;
+        border-top: #dddddd solid 1px;
+    }
+    
+    #nutShell{
+        font-size: 12px;
+        line-height: 30px;
+    }
+    
+    #skillBox{
+        position: absolute;
+        left: 5%;
+        top: 60%;
+        text-align: center;
+    }
+    #skillBox img{
+        margin: 0 50px;
     }
     
     #contactMe{
