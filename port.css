@@ -4,6 +4,7 @@
     /* tablets and desktop */
     body{
         margin: 0;
+        background-color: #151515;
     }
     
     #wrapper{
@@ -33,26 +34,68 @@
     
     nav{
         text-align: center;
+        border-bottom: 1px solid #dddddd;
+        border-top: 1px solid #dddddd;
+        webkit-box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px -2px 5px 2px rgba(0,0,0,0.1) inset;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 5px;
     }
     
     nav ul {
         list-style: none;
+        width: inherit;
+        padding: 0;
+        margin: 0;
     }
     nav ul li {
         position: relative;
-        left: -40px;
-        padding: 15px 0px;
-        width: 256px;
-        border-bottom: 1px solid #dddddd;
-        webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
-        -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
-        box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.1);
-        background-color: #fff;
+        padding: 20px 0px;
     }
     nav ul li a {
         text-decoration: none;
         position: relative;
+        font-family: 'Source Code Pro', monospace;
+        font-weight: 600;
+        opacity: 0.8;
     }
+    nav ul li a:hover{
+        opacity: 1;
+    }
+    
+     #lServices{
+         padding-top: 22px;
+         padding-bottom: 22px;
+         padding-left: 92px;
+         padding-right: 92px;
+         border-radius: 5px;
+         border-color: #5cb85c;
+         background-color: #5cb85c;
+         color: white;
+    }
+    
+    #lContact{
+        padding-top: 22px;
+        padding-bottom: 23px;
+        padding-left: 83px;
+        padding-right: 83px;
+        border-radius: 5px;
+        border-color: #f0ad4e;
+        background-color: #f0ad4e;
+        color: white;
+    }
+    
+    #lPortfolio{
+        padding: 22px 76px 22px 75px;
+        border-radius: 5px;
+        border-color: #0275d8;
+        background-color: #0275d8;
+        color: white;
+    }
+
+    
     a:visited{
         color: blue;
     }
@@ -64,9 +107,15 @@
     
      .aboutMe p {
         margin: 5px 0px;
+        text-align: center;
+         
     }
     
-    .fullSec .backgroundImg img#backG {
+    img#backG {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 0;
         animation-name: grayOut;
         animation-duration: 2s;
         animation-timing-function: ease-in-out;
@@ -93,57 +142,85 @@
     }
     
     #Portfolio #backG{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        z-index: 0;
+        
     }
     
     .siteContainer{
-        width: 48%;
+        width:50%;
         height: auto;
+        opacity: 0;
         position: relative;
+        animation-name: fadeIn;
+        animation-duration: 5s;
+        animation-timing-function:ease;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes fadeIn{
+        from{
+            opacity: 0;
+        }
+        to{
+           opacity: 1;
+        }
     }
     .siteContainer img{
         width: 100%;
+        height: 100%;
         margin: 0;
         position: relative;
         z-index: 1;
     }
     .siteContainer p {
         margin: 0;
-        margin-top: -5px;
+        margin-top: -8px;
+        padding-top: 2px;
+        padding-bottom: 10px;
         color: white;
         text-align: center;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #007fff;
+        box-shadow: 0px 0px 20px -6px white;
+    }
+    
+    #tempSite p {
+        margin: auto;
+    }
+    
+    .siteContainer p a {
+        color: aliceblue;
+        font-weight: 800;
+        text-decoration:underline;
     }
     
     #quoteSite{
-        left: 1%;
-        top: 15%;
+        left:;
+        top:;
     }
     #twitchSite{
-        left: 51%;
-        top: -10%
+        left: 50%;
+        top: -4%
+    }
+    #wikiSite{
+        top: -8%
+    }
+    #tempSite{
+        left: 50%;
+        top: -12%;
     }
     
     #Services{
         width: 75%;
         position: relative;
         left: 256px;
-        background-image: url(Screenshots/pexels-coding.jpeg);
-        background-size: cover;
-        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-        filter: grayscale(100%);
     }
     
     #contactMe{
         width: 75%;
         position: relative;
         left: 256px;
-        background-image: url(Screenshots/pexels-newyorkcity.jpeg);
-        background-size: cover;
-        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-        filter: grayscale(100%);
     }
     footer{
         text-align: center;
@@ -196,3 +273,5 @@ cite p{
 @media only screen and (max-width: 767px) and (orientation: portrait) {
     /* portrait phones */
 }
+
+
