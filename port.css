@@ -397,7 +397,8 @@
     .siteContainer p {
         margin: 0;
         color: white;
-        text-align: center;       width: 100%;
+        text-align: center;      
+        width: 100%;
         padding: 20px 0px;
     }
     
@@ -529,7 +530,7 @@
         color: white;
     }
 }
-@media only screen and (max-width: 565px){
+@media only screen and (max-width: 565px) and (orientation: portrait){
     
     body{
         background-color: black;
@@ -698,6 +699,151 @@
     }
     
 }
+
+@media only screen and (max-width: 594px) and (orientation: landscape) {
+  /* rules for iPad in landscape orientation */
+    
+    body{
+        background-color: black;
+    }
+    
+    ul{
+        margin: 0;
+    }
+    
+    #logo {
+        text-align: center;
+        color: #dddddd;
+    }
+
+    nav {
+        text-align: center;
+    }
+    
+    nav ul {
+        list-style: none;
+        padding-left: 0;
+        width: 100vw;
+    }
+    
+    nav ul li {
+        color: white;
+        padding: 15px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+    }
+    
+    .aboutMe{
+        position: relative;
+        height: 100%;
+    }
+    
+    .aboutMe img {
+        width: 50%;
+    }
+    
+    .aboutMe p {
+        color: white;
+        width: 50%;
+        display: inline-block;
+    }
+    
+    #sen1 {
+        position: absolute;
+    }
+    
+    #sen2 {
+        position: absolute;
+        top: 15%;
+    }
+    
+    #sen3 {
+        position: absolute;
+        top: 45%;
+    }
+    .fullSec {
+        display: block;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+    
+    .fullSec #backG {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .siteContainer {
+        z-index: 1;
+        height: 20vh;
+        position: absolute;
+        top: 0;
+    }
+    
+    .siteContainer img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .siteContainer p {
+        position: absolute;
+        top: 0;
+        text-align: center;
+        left:15%;
+        color: white;
+    }
+    
+    #quoteSite p {
+        background-color: black;
+    }
+    
+    #twitchSite{
+        top: 25%;
+    }
+    
+    #wikiSite {
+        top: 50%;
+    }
+    
+    #tempSite {
+        top: 75%;
+    }
+    
+    #nutshell {
+        position: absolute;
+        z-index: 1;
+        color: white;
+        top: 0;
+        display: none;
+    }
+    
+    #skillBox {
+        position: absolute;
+        top: 25%;
+        z-index: 1;
+        text-align: center;
+        width: 100%;
+        color: white;
+    }
+    
+    #skillBox img {
+        background-color: white;
+        width: auto;
+        margin: 0 5%;
+    }
+    
+    #divAdd {
+        background-color: #151515;
+        color: white;
+        text-align: center;
+        position: absolute;
+        top: 25%;
+        
+    }
+}
+
 
 
 
