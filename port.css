@@ -557,7 +557,7 @@
     #lPortfolio {
         display: block;
         width: 100%;
-        background-image: url(Screenshots/pexels-stars.jpeg);
+        background-image: url(Screenshots/pexels-stars.jpg);
         background-size: cover;
         color: #dddddd;
     }
@@ -569,7 +569,7 @@
     #lServices{
         display: block;
         width: 100%;
-        background-image:url(Screenshots/pexels-coding.jpeg);
+        background-image:url(Screenshots/pexels-coding.jpg);
         background-size: cover;
         color: #dddddd;
     }
@@ -580,7 +580,7 @@
     #lContact{
         display: block;
         width: 100%;
-        background-image: url(Screenshots/pexels-newyorkcity.jpeg);
+        background-image: url(Screenshots/pexels-newyorkcity.jpg);
         background-size: cover;
         color: #151515;
     }
