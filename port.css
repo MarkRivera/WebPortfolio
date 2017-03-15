@@ -1,10 +1,12 @@
-@media only screen and (min-width: 1041px) {
+@media only screen and (min-width: 996px) {
     /* tablets and desktop */
     body{
         margin: 0;
         background-color: #151515;
     }
-    
+    h1,h2,h3,h4,h5,h6{
+        margin: 0px 0px !important;
+    }
     .fullSec{
         min-height: 794px;
     }
@@ -70,8 +72,8 @@
      #lServices{
          padding-top: 22px;
          padding-bottom: 22px;
-         padding-left: 92px;
-         padding-right: 92px;
+         padding-left: 79px;
+         padding-right:79px;
          border-radius: 5px;
          border-color: #5cb85c;
          background-color: #5cb85c;
@@ -81,8 +83,8 @@
     #lContact{
         padding-top: 22px;
         padding-bottom: 23px;
-        padding-left: 83px;
-        padding-right: 83px;
+        padding-left: 71px;
+        padding-right: 71px;
         border-radius: 5px;
         border-color: #f0ad4e;
         background-color: #f0ad4e;
@@ -248,7 +250,9 @@
     
     #skillBox h2{
         color: black;
+        margin: 0;
     }
+    
     
     #skillBox img{
         margin: 0 50px;
@@ -304,48 +308,396 @@
    
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 567px) and (max-width: 995px) {
     /* phones */
+    
+    body{
+        background-color:#151515;
+    }
+    
+    header{
+        height: 100vh;
+    }
 
-#logo{
-    text-align: center;
+    #logo h1{
+        text-align: center;
+        color: white;
+    }
+
+    #logo h1 a {
+        display: inline-block;
+    }
+    
+    .navi {
+        color: white;
+    }
+    
+    ul {
+        padding: 0;
+    }
+    
+    nav ul {
+        list-style: none;
+        text-align: center;
+    }
+    
+    nav ul li {
+        padding: 25px;
+    
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        font-weight: 900;
+    }
+    
+    .navi img {
+        width: 25%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .navi p {
+        text-align: center;
+    }
+    
+    .fullSec #backG{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+    .siteContainer{
+        position: relative;
+        width: 45%;
+        z-index: 1;
+        filter: grayscale(100%);
+    }
+    
+    .siteContainer:hover {
+        animation-name: toColor;
+        animation-delay: 0s;
+        animation-timing-function: ease-in;
+        animation-duration: .2s;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes toColor {
+        from {
+            filter: grayscale(100%);
+        }
+        to {
+            filter: grayscale(0%);
+        }
+    }
+    
+    .siteContainer img {
+        width: 100%;
+    }
+    
+    .siteContainer p {
+        margin: 0;
+        color: white;
+        text-align: center;       width: 100%;
+        padding: 20px 0px;
+    }
+    
+    #Portfolio {
+        position: relative;
+    }
+    
+    #quoteSite{
+        position: absolute;
+        left: 5%;
+        top: 10%;
+    }
+    
+    #twitchSite{
+        position: absolute;
+        left: 50%;
+        top: 10%;
+    }
+    
+    #wikiSite {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+    }
+    
+    #tempSite {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+    }
+    
+    #Services #backG{
+        position: relative;
+        z-index: -1;
+    }
+    
+    #Services {
+        position: relative;
+    }
+    
+    #offers {
+        position: absolute;
+        top: 25%;
+        background-color: #151515;
+        color: white;
+        box-shadow: black 0px 0px 50px 0px inset;
+    }
+    
+    #Services h1 {
+        text-align: center;
+        margin: 25px;
+    }
+    
+    #Services p, ul{
+        text-align: center;
+        width: 75%;
+        position: relative;
+        left: 15%;
+    }
+    
+    #Services ul {
+        margin: 0;
+    }
+    
+    #Services p {
+        margin-bottom: 15px;
+    }
+    
+    #Services h2 {
+        text-align: center;
+        margin-top: 0;
+        
+    }
+    
+    #skillBox {
+        position: relative;
+        margin-top: 0;
+        text-align: center;
+    }
+    
+    #skillBox img {
+        background-color: white;
+        box-shadow: 0px 0px 6px 0px;
+        position: relative;
+        margin-bottom: 15px;
+    }
+    
+    #contactMe { 
+        position: relative;
+    }
+    
+    #contactDiv {
+        position: absolute;
+        top: 30%;
+        background-color: #151515;
+        color: white;
+        box-shadow: black 0px 0px 50px 0px inset;
+        height: 350px;
+    }
+    
+    #contactDiv h1 {
+        text-align: center;
+    }
+    
+    #contactDiv p {
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    #contactDiv address {
+        text-align: center;
+    }
+    
+    #divAdd {
+        position: relative;
+        top: 15%;
+    }
+    
+    footer{
+        text-align: center;
+    }
+    
+    #socialFooters a{
+     margin: 5px 50px;
+    }
+    cite {
+        color: white;
+    }
 }
-#codeSymbol{
+@media only screen and (max-width: 565px){
+    
+    body{
+        background-color: black;
+    }
+    
+    #logo {
+        text-align: center;
+        color: #dddddd;
+    }
+
+    nav {
+        text-align: center;
+    }
+    
+    nav ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        padding: 15% 0;
+    }
+    
+    #lPortfolio {
+        display: block;
+        width: 100%;
+        background-image: url(Screenshots/pexels-stars.jpeg);
+        background-size: cover;
+        color: #dddddd;
+    }
+    
+    #lPortfolio:hover {
+        opacity: 0.9;
+    }
+    
+    #lServices{
+        display: block;
+        width: 100%;
+        background-image:url(Screenshots/pexels-coding.jpeg);
+        background-size: cover;
+        color: #dddddd;
+    }
+    
+    #lServices:hover{
+        opacity: 0.9;
+    }
+    #lContact{
+        display: block;
+        width: 100%;
+        background-image: url(Screenshots/pexels-newyorkcity.jpeg);
+        background-size: cover;
+        color: #151515;
+    }
+    
+    #lContact:hover {
+        opacity: 0.9;
+    }
+    
+    .aboutMe {
+        display: block;
+        height: 100vh;
+        width: 100%;
+    }
+    
+    #picMe {
+        width: inherit;
+        height: auto;
+    }
+    .aboutMe p{
+        color: white;
+        text-align: center;
+    }
+    
+    .fullSec {
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+    }
+    
+    .fullSec .backgroundImg {
+        width: 100%; 
+        min-height: 100vh;
+    }
+    
+    #backG {
+        width: inherit;
+        min-height: 100vh;
+    }
+    
+    .siteContainer {
+        position: absolute;
+        z-index: 1;
+        width: 100vw;
+        height: 25vh;
+    }
+    
+    .siteContainer img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .siteContainer p {
+        text-align: center;
+        color: white;
+        transform: translateY(-100%);
+        margin: 0;
+        
+    }
+    
+    #quoteSite{
+        top: 0%;
+    }
+    
+    #twitchSite{
+        top: 25%
+    }
+    
+    #wikiSite{
+        top: 50%;
+    }
+    
+    #tempSite {
+        top: 75%;
+    }
+    
+    #offers {
+        position: absolute;
+        height: auto;
+        top: 15%;
+        text-align: center;
+        color: white;
+        background-color: #151515;
+        box-shadow: inset 0px 0px 30px 20px black;
+    }
+    
+    #skillBox img{
+        background-color: white;
+    }
+    
+    #contactDiv {
+        position: absolute;
+        z-index: 1;
+        top:25%;
+        height: 50%;
+        color: white;
+        background-color: #151515;
+        text-align: center;
+        box-shadow: inset 0px 0px 30px 20px black;
+    }
+    
+    #contactDiv h1 {
+        margin-top: 10%;
+    }
+    
+    #contactDiv p {
+        margin: 0 5%;
+    }
+    
+    footer {
+        text-align: center;
+    }
+    
+    footer a {
+       margin: 0 5%;
+    }
     
 }
 
-nav a{
-    text-align: center;
-}
 
 
-footer {
-    height: 75px;
-}
-
-footer a{
-    margin: 0px 50px;
-    padding: 10px;
-}
-
-#socialFooters{
-    text-align: center;
-}
-
-cite p{
-    text-align: center;
-    padding-top: 10px;
-}
-
-
-@media only screen and (max-width: 767px) and (orientation: portrait) {
-    /* portrait phones */
-}
-
-
-
-
-
-#skillBox h2 {
-    margin: 0;
-}
